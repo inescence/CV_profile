@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Inna Miller</div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Inna Miller</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/photo_CV1.jpeg" alt="Inna's profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1 heading">Hello, I'm</p>
+        <h1 class="logo">QA Engineer</h1>
+        <p>Welcome to my page! I’m glad you stopped by.</p>
+        <br />
+        <p>
+          I created this page to provide you with a clear understanding of my
+          contributions to past projects. Feel free to navigate through the
+          different sections to get a deeper look at my expertise.
+        </p>
+        <br>
+
+        <img src="./assets/experience.png"
+             alt="Experience icon"
+                class="icon"
+              />
+              <h3>Technical Skills</h3>
+              <br />
+              <p class="section__text__p2 heading">Python | Selenium | Pytest | Requests | Allure | Git | CI/CD | Docker | HTML | CSS | JS | SQL
+              </p>
+
+        <p>
+          I am proficient in designing and executing comprehensive test cases,
+          and skilled at identifying and documenting software defects using a wide range of tools and techniques.
+          With a commitment to continuous improvement and a passion for learning,
+          I am excited to contribute effectively to your QA team.
+        </p>
+        <p>---</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/QA_Miller_CV.pdf')"
+          >
+            Download Resume EN
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('https://github.com/inescence')"
+          >
+            Visit GitHub
+          </button>
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Inna-Miller-CV.pdf')"
+          >
+            Download Resume RU
+          </button>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-content">
+        <div class="experience-details-container">
+          <div class="details-container">
+            <h2>Test Automation Tools</h2>
+            <br>
+            <div class="inline-section">
+              <h3>Languages</h3>
+              <p>Python, HTML, CSS, JS, SQL</p>
+              <br>
+            </div>
+            <div class="inline-section">
+              <h3>Test Automation Tools</h3>
+              <p>Selenium WebDriver, Pytest, Requests, Allure Report, Playwright, GitHub, GitLab, Docker</p>
+              <br>
+            </div>
+            <div class="inline-section">
+              <h3>API testing</h3>
+              <p>REST, SOAP, SoapUI, Postman, Swagger</p>
+            </div>
+            <br>
+            <div class="inline-section">
+              <h3>Types of Testing</h3>
+              <p>UI Testing, API Testing, Smoke Testing, Regression Testing, Exploratory Testing, Test Automation, etc.</p>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2>Achievements</h2>
+            <br>
+            <div class="inline-section">
+              <div class="experience-content">
+                <div class="experience-item">
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <p>
+                    Implemented the automation testing process from scratch,
+                    reducing manual testing time by 60% across 2 internal projects
+                  </p>
+                </div>
+                <div class="experience-item">
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <p>
+                    Automated 500+ complex UI and backend test scenarios,
+                    reducing regression testing time by 75%
+                  </p>
+                </div>
+                <div class="experience-item">
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <p>
+                    Reorganized the testing process, eliminating critical post-release bugs,
+                    achieving 100% feature coverage with E2E Selenium tests
+                  </p>
+                </div>
+                <div class="inline-section">
+                  <h3></h3>
+                  <div class="experience-content">
+                    <div class="experience-item">
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <p>
+                        Identified and reported critical issues and improved software stability and user experience.
+                      </p>
+                    </div>
+                    <div class="experience-item">
+                      <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                      />
+                      <p>
+                        Optimized automated test scenarios, implementing CI/CD processes,
+                        and developing testing frameworks.
+                      </p>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">See My Recent</p>
+      <h1 class="title">Test Automation Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.png"
+                alt="Project 4"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">E-commerce project VseMayki</h2>
+            <p class="section__text__p2 heading">Python | Selenium | Pytest | Requests | Allure | GitLab CI/CD | Docker |
+              </p>
+            <p class="project-description">
+              Implemented the automation testing process from scratch,
+              reducing manual testing time by 60%
+            </p>
+            <p>---</p>
+            <p class="project-description">
+            <p>Reduced the time required to complete regression testing by 75%,
+              resulting complex UI and Backend auto-test scenarios fully automated.
+            </p>
+            <p>---</p>
+            <p>Changed the post-release bug statistics by reorganizing the testing process
+              100% of new features have been covered by e2e Selenium tests.
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/inescence/E-commerce_VseMayki_critical_path')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-5.png"
+                alt="Project 5"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">NEW PROJECT</h2>
+            <p class="section__text__p2 heading">Python | Selenium | Pytest | Requests | Allure | GitLab CI/CD | Docker |
+              </p>
+            <br>
+            <p class="project-description">
+              IN PROGRESS
+            </p>
+            <p>---</p>
+            <p class="project-description">
+              My new project that I am currently working on will be placed here :-)
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/inescence/')"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#manual-projects'"
+      />
+    </section>
+    <section id="manual-projects">
+      <p class="section__text__p1">I am Happy To Share</p>
+      <h1 class="title">Manual Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project Arrival"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              E-messenger Web, Mobile, API
+            </h2>
+            <p class="project-description">
+              Assured product quality through writing and execution 200+ integration tests;
+            </p>
+            <p class="project-description">
+              Resulting in no blocking/critical bugs for 15 consecutive releases.
+            </p>
+            <p>---</p>
+            <p class="project-description">
+              Designed and maintained a test model with more than 500 test cases scopes
+              for a more convenient and transparent structure.
+            </p>
+
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project SOAP"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Testing SOAP UI API
+            </h2>
+            <p class="project-description">
+              Created from scratch 140+ test scenarios to ensure thorough test
+              coverage and product reliability
+            </p>
+            <p>---</p>
+            <p class="project-description">
+              Identified and documented 45+ critical API defects using SOAP UI,
+              leading to improved functionality
+            </p>
+            <p>Demonstrated expertise in SQL and command line as verified seamless
+              backend functionality</p>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project Digitax"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Tax-Free Service Web, Mobile App
+            </h2>
+            <p class="project-description">
+              Crafted an exhaustive testing checklist utilizing app
+              documentation
+            </p>
+            <p>---</p>
+            <p class="project-description">
+              Evaluated software functionality. Identified critical defects in the mobile app
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:inescenceiq@gmail.com"
+              >Email</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/inna-miller-3669aa23b"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+
+        <div class="contact-info-container">
+          <img
+            src="./assets/telegram.png"
+            alt="Telegram icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://t.me/inescence"
+              target="_blank"
+              >Telegram</a
+            >
+          </p>
+        </div>
+
+      </div>
+      <img
+        src="./assets/arrow-two.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#desktop-nav'"
+      />
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
